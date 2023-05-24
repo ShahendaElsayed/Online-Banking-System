@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="registerStyle.css" />
+    <script src="registerScript.js" defer></script>
+    <title>Registraion Form</title>
+  </head>
+<body>
+    <!-- /*username, password confirm password*/ -->
+<div class="container" >
+    <div class="left" id="notforget">
+      <div class="header">
+        <h2 class="animation a1">Regesteration</h2>
+        <h4 class="animation a2">register using username and password</h4>
+      </div>
+      <div class="form" >
+        <input type="text" id="username" class="form-field animation a3" placeholder="Create username ">
+        <input type="password"id="newPassword" class="form-field animation a4" placeholder="Create Password">
+        <input type="password"id="confirmPassword" class="form-field animation a4" placeholder="Confirm Password">
+        <p class="animation a5"></p>
+        <button href="#" type="submit" onclick="submitForm(document.getElementById('username').value, document.getElementById('newPassword').value)" id="loginbtn" class="animation a6">REGISTER</button>
+      </div>
+   </div>
+    <div class="right"></div>
+  </div>
+
+</body>
+</html>
