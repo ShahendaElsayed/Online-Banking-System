@@ -1,7 +1,10 @@
-@import url("httpss://fonts.googleapis.com/css?family=Roboto");
+/* @import url("httpss://fonts.googleapis.com/css?family=Roboto"); */
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap');
 body {
  background-color: #dcdcdc;
     /* background: linear-gradient(to right, #78a7ba 0%, #385d6c 50%, #78a7ba 99%); */
+    background: linear-gradient(to right, #de48b5 0%,#1c1f78 100%); 
+    
 }
 :root {
     --primary-color: #2c3477;
@@ -99,7 +102,8 @@ body {
     position: absolute;
     top: calc(100% + 0.5rem);
     font-size: 0.85rem;
-    color: #666;
+    /* color: #666; */
+    color:white;
   }
   
   .progress-step-active {
@@ -121,8 +125,12 @@ body {
     border: 1px solid #ccc;
     border-radius: 0.35rem;
     padding: 1.5rem;
-    background-color: #8f93c8;
-  }
+    /* background-color: #8f93c8; */
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+  
   
   .form-step {
     display: none;
