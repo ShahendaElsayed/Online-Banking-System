@@ -277,7 +277,7 @@ body {
 }
 
 .a1, .a2, .a3, .a4, .a5, .a6 {
-  animation-name: move;
+  /* animation-name: move; */
   animation-duration: .4s;
   animation-fill-mode: both;
   width: 70%;
