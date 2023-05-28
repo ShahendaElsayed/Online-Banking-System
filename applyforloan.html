@@ -22,8 +22,7 @@
            <li><a href="">About</a></li>
            <li><a href="">Our Offer</a></li>
            <li><a href="">Gallary</a></li>
-           <li><a href="Register.html">Sign Up</a></li>
-           <li><a href="login.html">Sign In</a></li>
+           <li><a href="index.html">Log out</a></li>
 
        </ul>
 
@@ -51,7 +50,7 @@
     <!-- <div class="progress-step" data-title="Consent and Authorization"></div> -->
   </div>
 
-<form action="#" class="form">
+<form action="#" class="form" id="myForm">
     <h1>Loan Application</h1>
   <!-- Progress bar -->
  
@@ -233,56 +232,21 @@
         <input type="submit" value="Submit" class="btn" />
       </div>
 </div>
-<!--end credithistory-->
-<!-- <div class="form-step">
-    <div class="form-group">
-        <label for="identification">National ID </label>
-        <input type="file" id="identification" name="identification" accept=".pdf,.jpg,.jpeg,.png" required>
-    </div>
-    <div class="form-group">
-        <label for="proofOfAddress">Proof of Address *</label>
-        <input type="file" id="proofOfAddress" name="proofOfAddress" accept=".pdf,.jpg,.jpeg,.png" required>
-    </div>
-    <div class="form-group">
-        <label for="taxNumber">Tax Identification Number *</label>
-        <input type="text" id="taxNumber" name="taxNumber"placeholder="enter your Tax Number" required>
-    </div>
-    <div class="btns-group">
-      <a href="#" class="btn btn-prev">Previous</a>
-      <a href="#" class="btn btn-next">Next</a>
-    </div>
-  </div>
-  <div class="form-step">
-    <div class="form-group">
-        <label for="signature">signature *</label>
-     <div id="signatureContainer">
-<canvas id="signatureCanvas"></canvas>
-<a href="#" id="clearButton">Clear</a>
-<a href="#" id="saveButton">Save </a> -->
-<!-- <a href="#" id="clearButton"><i class="fas fa-trash"></i> Clear</a>
-<a href="#" id="saveButton"><i class="fas fa-save"></i> Save</a>
-</div> 
-    </div> -->
-    <!-- <div class="form-group">
-        <div class="terms-container">
-            <label>
-              <input type="checkbox" name="terms" id="termsCheckbox" required>
-              <span class="checkmark"></span>
-              I agree to the <a href="#">Terms and Conditions</a>
-            </label>
-          </div>
-    </div>
-    <div class="btns-group">
-      <a href="#" class="btn btn-prev">Previous</a>
-      <input type="submit" value="Submit" class="btn" />
-    </div>
-  </div>  -->
+
 </form>
 
 
 
 
-
+  <!-- popup -->
+  <div class="overlay" id="overlay"></div>
+  <div class="popup" id="popup">
+    <img src="images/right.png" class="rightphoto" alt="mshl2iha">
+    <h2>Thank you!</h2>
+    <p>Your details have been submitted successfully.</p>
+    <a href="client.html" id="popupbtn">HOME</a>
+  
+  </div>
 
 
 

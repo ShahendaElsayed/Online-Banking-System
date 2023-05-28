@@ -1,3 +1,30 @@
+  //pop up
+  var form = document.getElementById('myForm');
+  console.log(form);
+  form.addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent form submission
+
+    // Display the popup
+    showPopup();
+  });
+
+  function showPopup() {
+    var popup = document.getElementById('popup');
+    var overlay = document.getElementById('overlay');
+
+    popup.style.display = 'block';
+    overlay.style.display = 'block';
+  }
+
+  function hidePopup() {
+    var popup = document.getElementById('popup');
+    var overlay = document.getElementById('overlay');
+
+    popup.style.display = 'none';
+    overlay.style.display = 'none';
+  }
+
+
 document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener("scroll", function() {
     var navLinks = document.querySelectorAll(".nav-links ul li a");
@@ -165,3 +192,4 @@ function validateForm() {
   
     return true; // Allow form submission
   }
+  

@@ -22,8 +22,7 @@
            <li><a href="">About</a></li>
            <li><a href="">Our Offer</a></li>
            <li><a href="">Gallary</a></li>
-           <li><a href="Register.html">Sign Up</a></li>
-           <li><a href="login.html">Sign In</a></li>
+           <li><a href="index.html">Log out</a></li>
 
        </ul>
 
@@ -47,7 +46,7 @@
         <div class="progress-step" data-title="Terms and Conditions"></div>
       </div>
 
-    <form action="#" class="form">
+    <form action="#" class="form" id="myForm">
         <h1>Create Account</h1>
       <!-- Progress bar -->
      
@@ -55,7 +54,7 @@
       <!-- Steps -->
 <!--first form custmer info start-->
           <div class="form-step form-step-active">
-            <div class="form-group">
+            <div class="form-group" >
             <label for="firstname" class="label-title">First name *</label>
             <input type="text" id="firstname" class="form-input" placeholder="enter your first name" required="required" />
             <span id="error-message" style="color: red;"></span>
@@ -180,5 +179,15 @@
           <img class="img" src="images/Icons/twitter.png" alt="twitter icon">
       </div>
       </div>
+      <!-- popup -->
+      <div class="overlay" id="overlay"></div>
+      <div class="popup" id="popup">
+        <img src="images/right.png" class="rightphoto" alt="mshl2iha">
+        <h2>Thank you!</h2>
+        <p>Your details have been submitted successfully.</p>
+        <a href="client.html" id="popupbtn">HOME</a>
+      
+      </div>
+
   </body>
 </html>

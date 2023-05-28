@@ -179,3 +179,27 @@ function validateForm() {
   
     return true; // Allow form submission
   }
+  //pop up
+  var form = document.getElementById('myForm');
+  form.addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent form submission
+
+    // Display the popup
+    showPopup();
+  });
+
+  function showPopup() {
+    var popup = document.getElementById('popup');
+    var overlay = document.getElementById('overlay');
+
+    popup.style.display = 'block';
+    overlay.style.display = 'block';
+  }
+
+  function hidePopup() {
+    var popup = document.getElementById('popup');
+    var overlay = document.getElementById('overlay');
+
+    popup.style.display = 'none';
+    overlay.style.display = 'none';
+  }
