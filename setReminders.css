@@ -150,93 +150,7 @@ body {
 
   /* nav bar */
 /* Navigation Bar */
-.navbar {
-    /* background-color: #f8f8f8; */
-    background-color: #2c3477;
-    padding: 10px;
-    width:100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-  }
-  
-  /* Logo */
-  .navbar-logo-link {
-    /* color: #333; */
-    color:white;
-    font-size: 24px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  /* Navigation Items */
-  .navbar-nav {
-    list-style: none;
-    display: flex;
-  }
-  
-  .nav-item {
-    margin-right: 20px;
-  }
-  
-  .nav-link {
-    /* color: #666; */
-    color:white;
-    text-decoration: none;
-  }
-  
-  .nav-link:hover {
-    /* color: #333; */
-    color:#8f93c8
-  }
-  
-  /* User Section */
-  .navbar-user {
-    display: flex;
-    align-items: center;
-  }
-  
-  .navbar-welcome {
-    margin-right: 10px;
-    /* color: #666; */
-    color:white;
-  }
-  
-  .navbar-logout {
-    /* color: #666; */
-    color:white;
-    text-decoration: none;
-  }
-  
-  .navbar-logout:hover {
-    color:#8f93c8
-  }
-  
-/* nav bar */
-/* Footer */
-.footer {
-    background-color: #f8f8f8;
-    padding: 20px;
-    width: 100%;
-    margin-top:auto;
-  }
-  
-  /* Footer Content */
-  .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  /* Footer Logo */
-  .footer-logo-link {
-    color: #333;
-    font-size: 20px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
+
   /* Footer Links */
   .footer-nav {
     list-style: none;
@@ -393,20 +307,6 @@ body.scrolled .nav {
    width: 90%;
    margin: auto;
 }
-nav.scrolled {
-  background-color: white;
-  color: rgb(44, 52, 119);}
-  .seventh{
-    background-position: center center;
-    background-size: 100%;
-    height: fit-content;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    color: rgb(150, 150, 150);
-    background-color: #22285f;
-    
-  }
   .seventh .img{
     width:  35px;
     border: 1px solid transparent ;
@@ -434,6 +334,4 @@ nav.scrolled {
     margin-top: 10px;
     /* padding-bottom: 30px; */
    }
-  .nav{
-    background-color: none;
-  }
+  

@@ -333,9 +333,10 @@ color: #2c3477;
 }
 .nav-logo
 {
- width: 13%;
+ width: 11%;
  float: left;
  margin-top: 10px;
+ margin-left: 60px;
 
 }
 .nav-logo img
@@ -349,16 +350,18 @@ body.scrolled .nav {
 .nav-links ul li a.scrolled {
  color: #2c3477; /* Color for list elements when scrolled */
 }
+
 .nav-links ul
 {
  float: right;
  margin-top: 10px;
+ margin-right: 120px;
 }
 .nav-links ul li
 {
  list-style-type: none;
  float: left;
- padding: 15px;
+ padding: 10px 25px;
 }
 .nav-links ul li :hover
 {
@@ -374,14 +377,12 @@ body.scrolled .nav {
 {
  clear: both;
 }
-.containerr
+.container
 {
  width: 90%;
  margin: auto;
 }
-nav.scrolled {
-background-color: white;
-color: rgb(44, 52, 119);}
+
 /*end nav*/
 .seventh{
   background-position: center center;

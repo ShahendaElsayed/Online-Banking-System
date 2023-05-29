@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
   document.querySelector(".slides").style.width = containerWidth + "px"; });
 
 
-function login(username, password) {
+  function login(username, password) {
     // Check the username and password against your authentication logic
     if (username === 'admin' && password === 'admin') {
       // Redirect to the admin page if the credentials are valid
