@@ -24,13 +24,13 @@ function login(username, password) {
     // Check the username and password against your authentication logic
     if (username === 'admin' && password === 'admin') {
       // Redirect to the admin page if the credentials are valid
-      window.location.href = 'applyforloan.html';
+      window.location.href = 'admin.html';
     } else if (username === 'client' && password === 'client') {
       // Redirect to the user page if the credentials are valid
-      window.location.href = 'CreateAccount.html';
+      window.location.href = 'client.html';
     } else  if(username === 'banker' && password === 'banker'){
       // Redirect to an error page if the credentials are invalid
-      window.location.href = 'applyforloan.html';
+      window.location.href = 'banker.html';
     }
   }
 
