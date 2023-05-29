@@ -13,66 +13,71 @@ body
 
 /* HOMe */
 .nav{
-     transition: background-color 0.3s ease-in-out; 
-     position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 999; 
-    
+  transition: background-color 0.3s ease-in-out; 
+  position: fixed;
+     top: 0;
+     width: 100%;
+     z-index: 999; 
+ 
 }
 
 .nav.scrolled {
-  background-color: white; 
-  color: #2c3477;
+background-color: white; 
+color: #2c3477;
 }
 .nav-logo
 {
-    width: 13%;
-    float: left;
-    margin-top: 10px;
-   
+ width: 11%;
+ float: left;
+ margin-top: 10px;
+ margin-left: 60px;
+
 }
 .nav-logo img
 {
-    width: 100%;
+ width: 100%;
 }
 body.scrolled .nav {
-    background-color: white;
-   
-  }
-  .nav-links ul li a.scrolled {
-    color: #2c3477; /* Color for list elements when scrolled */
+ background-color: white;
+
 }
+.nav-links ul li a.scrolled {
+ color: #2c3477; /* Color for list elements when scrolled */
+}
+
 .nav-links ul
 {
-    float: right;
-    margin-top: 10px;
+ float: right;
+ margin-top: 10px;
+ margin-right: 120px;
 }
 .nav-links ul li
 {
-    list-style-type: none;
-    float: left;
-    padding: 15px;
+ list-style-type: none;
+ float: left;
+ padding: 10px 25px;
 }
 .nav-links ul li :hover
 {
-    
-    text-decoration: underline;
+ 
+ text-decoration: underline;
 }
 .nav-links ul li a
 {
-    color: white;
-    text-decoration: none;
+ color: white;
+ text-decoration: none;
 }
 .clr
 {
-    clear: both;
+ clear: both;
 }
 .container
 {
-    width: 90%;
-    margin: auto;
+ width: 90%;
+ margin: auto;
 }
+
+
 /* .home
 {
     /* background-image: url(images/Home\ \(1\).png); 
@@ -125,9 +130,9 @@ body.scrolled .nav {
     text-align: left;
     padding: 15px 35px;
     /* background-color: #2c3477; */
-    background: linear-gradient(to right,  #2f225f, #7892ba);
-    border: none;
-    color: #f3f3f3;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
     text-align: center;
     border-radius: 4px;
     cursor: pointer;
@@ -136,14 +141,16 @@ body.scrolled .nav {
     /* border: #2c3477 2px solid; */
   }
   .btn:hover {
-    background-color: transparent;
-    border: white 2px solid;
-    color: #2c3477;
-    background: transparent;
+    background-color: white;
+     color: #2c3477;
+   
   }
   a{
     color: white;
     text-decoration: none;
+  }
+  a:hover{
+    color: #22285f;
   }
   /* BANK NEWS */
   .slider {
@@ -185,28 +192,195 @@ body.scrolled .nav {
   .slide:nth-child(3) {
     background-color: #0000ff;
   }
-  
-  .prev-btn,
-  .next-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 10px;
-    background-color: #ccc;
-    border: none;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
+
+
+  .prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 20px;
+  font-size: 14px;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+.prev-button::before,
+.next-button::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 15px;
+  border-color: transparent transparent transparent white;
+}
+
+.prev-button::before {
+  border-width: 10px 15px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+
+/* ------------------ */
+  /* why SEB */
+  #why-choose-us {
+    text-align: center;
+    /* padding: 40px 0; */
   }
   
-  .prev-btn {
-    left: 10px;
+  h2 {
+    margin-top: 150px;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #22285f;
   }
   
-  .next-btn {
-    right: 10px;
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  .news{
+  
+  .box {
+    width: 300px;
+    margin: 20px;
+    padding: 30px;
+    color: #22285f;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .box:hover {
+    transform: scale(1.05);
+  }
+  
+  .icon {
+    font-size: 60px;
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  
+  /*-----------------------------------  */
+  
+
+.clr{
+    clear: both;
+}
+
+
+
+
+/* Bank News */
+
+#news {
+  text-align: center;
+  /* padding: 40px 0; */
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 330px;
+  margin: 20px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #22285f;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #22285f;
+}
+
+.read-more {
+  display: inline-block;
+  background-color: #22285f;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.read-more:hover {
+  background-color: #f1f1f1;
+  color: #22285f;
+  border: 2px solid #22285f;
+}
+
+
+/* ------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* .news{
     width: 100%;
     height: 500px;
   }
@@ -243,7 +417,7 @@ body.scrolled .nav {
     background-color: transparent;
     border: white 2px solid;
     color: white;
-  }
+  } */
   
   .clr{
     clear: both;
@@ -378,3 +552,4 @@ body.scrolled .nav {
    .try img{
     width: 100%;
    }
+
