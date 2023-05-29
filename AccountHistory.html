@@ -54,8 +54,15 @@
 </div>
   <div class="container" id="ya3">
     <h1>Bank Account Transactions</h1>
-    
-    <table>
+    <label for="card-select">Please select the Acoount:</label>
+    <input list="cards" id="card-select" name="card-select" />
+    <datalist id="cards">
+      <option value="122145*******6578" />
+      <option value="22426775*******9998" />
+      <option value="3333*******5678" />
+    </datalist>
+
+     <table id="transaction-table" style="display: none;">
         <thead>
           <tr>
             <th>Posting Date</th>
@@ -227,6 +234,16 @@
       </table>
 
     </div>
+    <script>
+      document.getElementById("card-select").addEventListener("change", function() {
+        var selectedCard = this.value;
+        if (selectedCard !== "") {
+          document.getElementById("transaction-table").style.display = "table";
+        } else {
+          document.getElementById("transaction-table").style.display = "none";
+        }
+      });
+    </script>
   </body>
   </html>
   
