@@ -173,9 +173,7 @@ body {
     font-size: 20px;
   }
   
-  input[type="submit"]:hover {
-
-  }
+ 
   
   .error {
     color: red;
