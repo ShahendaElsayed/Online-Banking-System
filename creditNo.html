@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Loan Requests</title>
+    <link rel="stylesheet" type="text/css" href="cardNo.css">
+    <style>
+      body {
+        background-image: url(images/Home\ \(1\).png); 
+        background-size:auto;
+        background-position: center;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .loan-request {
+    width: 30%;
+    height: 30%;
+    background-color: whitesmoke;
+    color: #2c3477;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 150;
+    margin-bottom: 20px;
+    border: 1px solid   color #2c3477;
+    border-radius: 20px;  }
+    .form-container form {
+     width: auto;
+     height: 400px;
+     margin: 0 auto;
+     }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="loan-request">
+        <div class="form-container">
+
+            <br>    
+            <h2>Enter Credit Card number</h2>
+        <form>
+            <input type="text" id="account-number" name="account-number" required pattern >
+            <br>
+            <button class="accept" onclick="redirectViewTrans()">Submit</<button>
+            </form>
+            </div>
+      </div>
+    </div>
+    <script>
+      function redirectBanker() {
+        window.location.href = "banker.html";
+      }
+      function redirectViewTrans() {
+        window.location.href ="cardTransactions.html";
+      }
+    </script>
+  </body>
+</html>

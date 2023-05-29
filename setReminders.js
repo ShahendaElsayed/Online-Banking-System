@@ -1,18 +1,5 @@
 // Sample reminders data (replace with your own data)
-document.addEventListener("DOMContentLoaded", function() {
-  window.addEventListener("scroll", function() {
-    var navLinks = document.querySelectorAll(".nav-links ul li a");
-    for (var i = 0; i < navLinks.length; i++) {
-      navLinks[i].classList.toggle("scrolled", window.scrollY > 0);
-    }
-  });});
 const reminders = [];
-
-
-  window.addEventListener("scroll", function() {
-    var nav = document.querySelector(".nav");
-    nav.classList.toggle("scrolled", window.scrollY > 0);
-  });
 
 // Function to generate table rows for reminders
 function generateReminderRows() {
@@ -72,5 +59,5 @@ function addReminder(event) {
 }
 
 // Event listener for form submission
-const form = document.querySelector('form');
+const form = document.querySelector('#reminderForm');
 form.addEventListener('submit', addReminder);

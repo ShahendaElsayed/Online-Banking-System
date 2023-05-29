@@ -45,34 +45,39 @@
           <th>Subject</th>
         </tr>
         <tr>
-          <td><a href="index.html">2023-02-09 21:00:00</a></td>
-          <td><a href="index.html">M</a></td>
-          <td><a href="index.html">forgot my password</a></td>
+          <td><a href="#" onclick="showPopupR()">2023-02-09 21:00:00</a></td>
+          <td><a href="#" onclick="showPopupR()">M</a></td>
+          <td><a href="#" onclick="showPopupR()">forgot my password</a></td>
         </tr>
         <tr>
-          <td><a href="index.html">2023-05-21 07:00:00</a></td>
-          <td><a href="index.html">H</a></td>
-          <td><a href="index.html">unusual behaviour suspected</a></td>
+          <td><a href="#" onclick="showPopupR()">2023-05-21 07:00:00</a></td>
+          <td><a href="#" onclick="showPopupR()">H</a></td>
+          <td><a href="#" onclick="showPopupR()">unusual behaviour suspected</a></td>
         </tr>
         <tr>
-          <td><a href="index.html">2021-10-07 16:00:00</a></td>
-          <td><a href="index.html">M</a></td>
-          <td><a href="index.html">cheque submission status</a></td>
+          <td><a href="#" onclick="showPopupAR()">2021-10-07 16:00:00</a></td>
+          <td><a href="#" onclick="showPopupAR()">M</a></td>
+          <td><a href="#" onclick="showPopupAR()">cheque submission</a></td>
         </tr>
         <tr>
-          <td><a href="index.html">2023-01-01 23:00:00</a></td>
-          <td><a href="index.html">H</a></td>
-          <td><a href="index.html">promotion</a></td>
+          <td><a href="#" onclick="showPopupC()">2023-01-01 23:00:00</a></td>
+          <td><a href="#" onclick="showPopupC()">H</a></td>
+          <td><a href="#" onclick="showPopupC()">Bank Announcement:promotion</a></td>
         </tr>
         <tr>
-          <td><a href="index.html">2021-08-15 13:00:00</a></td>
-          <td><a href="index.html">H</a></td>
-          <td><a href="index.html">Loan Request status</a></td>
+          <td><a href="#" onclick="showPopupAR()">2021-08-15 13:00:00</a></td>
+          <td><a href="#" onclick="showPopupAR()">H</a></td>
+          <td><a href="#" onclick="showPopupAR()">Loan Request</a></td>
         </tr> 
         <tr>
-          <td><a href="index.html">2022-11-20 17:00:00</a></td>
-          <td><a href="index.html">L</a></td>
-          <td><a href="index.html">redeeming points</a></td>
+          <td><a href="#" onclick="showPopupR()">2022-11-20 17:00:00</a></td>
+          <td><a href="#" onclick="showPopupR()">L</a></td>
+          <td><a href="#" onclick="showPopupR()">redeeming points issue</a></td>
+        </tr> 
+        <tr>
+          <td><a href="#" onclick="showPopupAR()">2021-04-02 17:00:00</a></td>
+          <td><a href="#" onclick="showPopupAR()">L</a></td>
+          <td><a href="#" onclick="showPopupAR()">card replacement request</a></td>
         </tr> 
       </thead>
       <tbody>
@@ -95,6 +100,65 @@
       </div>
   </footer>
 
-  <script src="BankerNotifications.js"></script> 
+<!-- popup 1 -->
+<div class="overlay" id="overlay"></div>
+<div class="popup" id="popup">
+  <img src="images/right.png" class="rightphoto" alt="mshl2iha">
+  <h2>ALERT!</h2>
+  <p>Click here to resolve the issue.</p>
+  <a href="client.html" id="popupbtn">Resolve</a>
+
+</div>
+
+<!-- popup 2 -->
+<div class="overlayAR" id="overlayAR"></div>
+<div class="popupAR" id="popupAR">
+  <img src="images/right.png" class="rightphoto" alt="mshl2iha">
+  <h2>ALERT!</h2>
+  <p>Click here to update the status.</p>
+  <a href="Submission.html" id="popupbtn1">Accept</a>
+  <a href="Submission.html" id="popupbtn2">Reject</a>
+</div>
+
+<!-- popup 3 -->
+<div class="overlayC" id="overlayC"></div>
+<div class="popupC" id="popupC">
+  <img src="images/right.png" class="rightphoto" alt="mshl2iha">
+  <h2>ALERT!</h2>
+  <p>Click here to check the bank Announcements.</p>
+  <a href="client.html" id="popupbtn3">View</a>
+</div>
+
+  <script >
+    function showPopupR() {
+    var popup = document.getElementById('popup');
+    var overlay = document.getElementById('overlay');
+
+    popup.style.display = 'block';
+    overlay.style.display = 'block';
+  }
+  </script>
+
+<script >
+  function showPopupAR() {
+  var popupAR = document.getElementById('popupAR');
+  var overlayAR = document.getElementById('overlayAR');
+
+  popupAR.style.display = 'block';
+  overlayAR.style.display = 'block';
+}
+
+</script>
+
+<script>
+  function showPopupC() {
+  var popupC = document.getElementById('popupC');
+  var overlayC = document.getElementById('overlayC');
+
+  popupC.style.display = 'block';
+  overlayC.style.display = 'block';
+}
+</script>
+
 </body>
 </html>

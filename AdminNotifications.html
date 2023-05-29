@@ -45,40 +45,41 @@
           <th>Subject</th>
         </tr>
         <tr>
-          <td><a href="index.html">2023-02-09 21:00:00</a></td>
-          <td><a href="index.html">H</a></td>
-          <td><a href="index.html">Hacked Account</a></td>
+          <td><a href="#" onclick="showPopupR()">2023-02-09 21:00:00</a></td>
+          <td><a href="#" onclick="showPopupR()">H</a></td>
+          <td><a href="#" onclick="showPopupR()">Hacked Account</a></td>
         </tr>
         <tr>
-          <td><a href="index.html">2023-05-21 07:00:00</a></td>
-          <td><a href="index.html">H</a></td>
-          <td><a href="index.html">lost account balance</a></td>
+          <td><a href="#" onclick="showPopupR()">2023-05-21 07:00:00</a></td>
+          <td><a href="#" onclick="showPopupR()">H</a></td>
+          <td><a href="#" onclick="showPopupR()">lost account balance</a></td>
         </tr>
         <tr>
-          <td><a href="index.html">2021-10-07 16:00:00</a></td>
-          <td><a href="index.html">M</a></td>
-          <td><a href="index.html">rejected cheque submission</a></td>
+          <td><a href="#" onclick="showPopupR()">2021-10-07 16:00:00</a></td>
+          <td><a href="#" onclick="showPopupR()">M</a></td>
+          <td><a href="#" onclick="showPopupR()">rejected cheque submission</a></td>
         </tr>
         <tr>
-          <td><a href="index.html">2023-01-01 23:00:00</a></td>
-          <td><a href="index.html">H</a></td>
-          <td><a href="index.html">transaction not successfull</a></td>
+          <td><a href="#" onclick="showPopupR()">2023-01-01 23:00:00</a></td>
+          <td><a href="#" onclick="showPopupR()">H</a></td>
+          <td><a href="#" onclick="showPopupR()">transaction not successfull</a></td>
         </tr>
         <tr>
-          <td><a href="index.html">2021-08-15 13:00:00</a></td>
-          <td><a href="index.html">H</a></td>
-          <td><a href="index.html">Loan not submitted on deadline </a></td>
+          <td><a href="#" onclick="showPopupR()">2021-08-15 13:00:00</a></td>
+          <td><a href="#" onclick="showPopupR()">H</a></td>
+          <td><a href="#" onclick="showPopupR()">Loan not submitted on deadline </a></td>
         </tr> 
         <tr>
-          <td><a href="index.html">2022-11-20 17:00:00</a></td>
-          <td><a href="index.html">M</a></td>
-          <td><a href="index.html">credit card not working</a></td>
+          <td><a href="#" onclick="showPopupR()">2022-11-20 17:00:00</a></td>
+          <td><a href="#" onclick="showPopupR()">M</a></td>
+          <td><a href="#" onclick="showPopupR()">credit card not working</a></td>
         </tr> 
         <tr>
-          <td><a href="index.html">2023-05-17 01:00:00</a></td>
-          <td><a href="index.html">M</a></td>
-          <td><a href="index.html">deposit not successfull</a></td>
+          <td><a href="#" onclick="showPopupR()">2023-05-17 01:00:00</a></td>
+          <td><a href="#" onclick="showPopupR()">M</a></td>
+          <td><a href="#" onclick="showPopupR()">deposit not successfull</a></td>
         </tr>
+        
       </thead>
       <tbody>
         <!-- Table rows will be dynamically populated using JavaScript -->
@@ -99,7 +100,25 @@
       </div>
       </div>
   </footer>
+  <!-- popup 1 -->
+<div class="overlay" id="overlay"></div>
+<div class="popup" id="popup">
+  <img src="images/right.png" class="rightphoto" alt="mshl2iha">
+  <h2>ALERT!</h2>
+  <p>Click here to resolve the issue.</p>
+  <a href="client.html" id="popupbtn">Resolve</a>
 
-  <script src="AdminNotifications.js"></script> 
+</div>
+
+ <script >
+    function showPopupR() {
+    var popup = document.getElementById('popup');
+    var overlay = document.getElementById('overlay');
+
+    popup.style.display = 'block';
+    overlay.style.display = 'block';
+  }
+  </script>
+
 </body>
 </html>

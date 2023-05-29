@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>replacement Requests</title>
+    <link rel="stylesheet" type="text/css" href="replacement.css">
+  </head>
+  <body>
+    <h1  style="color: white;" > Card replacement</h1>
+    <div class="container">
+      <div class="loan-request">
+        <h2>Request 192552</h2>
+        <hr>
+        <p>Card Number: 0984654321</p>
+        <p>issue date: 29-5-2023</p>
+        <p>replacement reason: Theft 5%</p>
+        <button class="Replace" onclick="redirectBanker()">Replace</Replace>
+      </div>
+      <div class="loan-request">
+        <h2>Request 192553</h2>
+        <hr>
+        <p>Card Number: 0987654321</p>
+        <p>issue date: 29-5-2023</p>
+        <p>replacement reason: Lost</p>
+        <button class="accept" onclick="redirectBanker()">Replace</Replace>
+      
+      </div>
+      <div class="loan-request">
+        <h2>Request 192554</h2>
+        <hr>
+        <p>Card Number: 4567890123</p>
+        <p>issue date: 29-5-2023</p>
+        <p>replacement reason: Lost</p>
+        <button class="accept" onclick="redirectBanker()">Replace</Replace>
+      </div>
+    </div>
+    <script>
+      function redirectBanker() {
+        window.location.href = "banker.html";
+      }
+    </script>
+  </body>
+</html>
