@@ -216,4 +216,75 @@ body {
     .nav-link:hover {
       color: #8f93c8;
     }
- 
+   /*navbar*/
+   .nav{
+    transition: background-color 0.3s ease-in-out; 
+    position: fixed;
+       top: 0;
+       width: 100%;
+       z-index: 999; 
+   
+}
+
+.nav.scrolled {
+ background-color: white; 
+ color: #2c3477;
+}
+.nav-logo
+{
+   width: 13%;
+   float: left;
+   margin-top: 10px;
+  
+}
+.nav-logo img
+{
+   width: 100%;
+}
+body.scrolled .nav {
+   background-color: white;
+  
+ }
+ .nav-links ul li a.scrolled {
+   color: #2c3477; /* Color for list elements when scrolled */
+}
+.nav-links ul
+{
+   float: right;
+   margin-top: 10px;
+}
+.nav-links ul li
+{
+   list-style-type: none;
+   float: left;
+   padding: 15px;
+}
+.nav-links ul li :hover
+{
+   
+   text-decoration: underline;
+}
+.nav-links ul li a
+{
+   color: white;
+   text-decoration: none;
+}
+.clr
+{
+   clear: both;
+}
+.containeer
+{
+   width: 90%;
+   margin: auto;
+}
+nav.scrolled {
+  background-color: white;
+  color: rgb(44, 52, 119);}
+  #ya3{
+    margin-top: 200px;
+    width: 100%;
+  }
+  #myy{
+    width:100%;
+  }
